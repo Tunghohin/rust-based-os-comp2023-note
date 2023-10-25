@@ -1,7 +1,7 @@
 # rust-based-os-comp2023-note
 Learning Record
 
-# Week 1 (2023-10-08 ~ 2023-10-15)
+# Week 1 (2023-10-08 ~ 2023-10-14)
 ## Day 1
 前几天看了一部分rust圣经，开始刷 rustlings，第一天大概刷了四五十题这样，前面的题没碰到什么难的地方。
 ## Day 2
@@ -27,5 +27,25 @@ test 后面几题涉及到了编译链接的知识，了解到了 rust 编译后
 
 晚上看完了多道程序协作式调度，实际上多到程序的切换就是把 TaskContext 的返回地址设置成 __restore, 利用 __restore 跳到用户态，原理跟批处理系统差不多。
 
-## Day 8
+# Week 2 (2023-10-05 ~ 2023-10-21)
+
+## Day 1
 看了分时多任务，并且成功复现。
+
+## Day 2
+看了 mm 模块，写（抄）了一遍 frame_allocator 和 page_table 的实现。
+
+## Day 3
+被将 vpn_range 封装成迭代器的案例震惊到，学到了。
+
+## Day 4
+看了 memory_set 的实现， 利用 RAII 机制管理内存很棒。
+
+## Day 5
+写了下 2023s的ch3 实验，比较简单
+
+## Day 6
+本日休息
+
+## Day 7
+回头看了下 rust 的一些细节，理解了之前没理解的 UpSafeCell 的原理，明确了一些之前理解较为模糊的细节。
